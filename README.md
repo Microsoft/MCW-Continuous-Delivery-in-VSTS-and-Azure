@@ -4,13 +4,13 @@ As we look to streamline content and improve training, we are considering retiri
 
 # Continuous delivery in Azure DevOps
 
-Tailspin Toys saw the positive potential of the cloud and moved its IT infrastructure, with no significant re-architecture, into Microsoft Azure around six months ago. Now that its business is running successfully in the cloud, it has started a series of process improvements to become a more agile company with a specific focus on delivering frequent feature updates and fixes to its public website. Alex Montgomery, VP of sales and the head of its online business team, says that, "Even though our products are better, our competitors are generating more online sales than we are. For every feature that we deliver to our website, they have delivered 2 or 3. Our development processes are too cumbersome and slow for us to build quality code at that pace."
+Fabrikam Medical Conferences provides conference web site services tailored to the medical community. They started out 10 years ago building a few conference sites for a small conference organizer. Since then, word of mouth has spread, and Fabrikam MedicalConferences is now a well-known industry brand. They currently handle over 100 conferences per year and growing.
 
-When it moved its existing systems into Microsoft Azure, Tailspin Toys decided to use the Azure App Service to host its public website which is written as an Angular front-end with an ASP.NET Core Web API. For the database (back-end) tier, they chose the Azure PostgreSQL Database service for full Platform-as-a-Service agility.
+Websites for medical conferences are typically low budget web sites because the conferences usually have between 100 to 1500 attendees. At the same time, the conference owners have significant customization and change demands that require turnaround on a dime to the live sites. These changes can impact various aspects of the system from UI through to the back end, including conference registration and payment terms.
 
-Tailspin wants to improve the turnaround time for fixing these bugs, and they need better logs for the developers. Tailspin needs a solution to gather new types of logs including browser errors and application dependency errors such as timeouts. Ideally, they want to make the application logs searchable as well as implement an automated warning system that emails alerts when application behavior is unusually slow or problematic.
+The VP of Engineering at Fabrikam, Susan Withers, has a team of 12 developers who handle all aspects of development, testing, deployment, and operational management of their customer sites. Due to customer demands, they have issues with the efficiency and reliability the conference websites. This mainly caused by an inefficient development and operations workflow.
 
-June 2020
+June 2021
 
 ## Target audience
 
@@ -20,21 +20,21 @@ June 2020
 
 ### Workshop
 
-In this workshop, you will learn how to setup and configure continuous delivery within Azure using a combination of Azure Resource Manager templates and Azure DevOps. You will do this throughout the use of a new Azure DevOps project, Git repository for source control, and an Azure Resource Manager template for Azure resource deployment and configuration management.
+In this workshop, you will learn how to setup and configure continuous delivery within Azure and GitHub. You will do this through the use of a new Azure DevOps project, Github repository for source control, Github actions for continuous delivery and deployment automation, and an Azure Resource Manager (ARM) template for Azure resource deployment and configuration management.
 
-At the end of this workshop, you will be able to build templates to automate cloud infrastructure and reduce error-prone manual processes. In addition,  you'll create an Azure Resource Manager (ARM) template to provision Azure resources, configure continuous delivery with Azure DevOps, and create an Azure DevOps project and Git repository.
+At the end of this workshop, you will be able to build templates to automate cloud infrastructure and reduce error-prone manual processes. In addition,  you'll create an ARM template to provision Azure resources, configure continuous delivery with Azure DevOps, and create an Azure DevOps project and Git repository.
+
 
 ### Whiteboard design session
+In this whiteboard design session, you will learn how to design a solution with a combination of ARM templates, Azure DevOps, and Github actions to enable continuous delivery with several Azure PaaS services.
 
-In this whiteboard design session, you will learn how to design a solution with a combination of Azure Resource Manager templates and Azure DevOps to enable continuous delivery with several Azure PaaS services.
+At the end of this workshop, you will be better able to build templates to automate cloud infrastructure and reduce error-prone manual processes. In addition, you'll learn how to design a deployment and monitoring architecture using ARM templates to provision Azure resources, Application Insights for deep application monitoring, and Github as a source code repository and build/deploy pipeline.
 
-At the end of this workshop, you will be better able to build templates to automate cloud infrastructure and reduce error-prone manual processes. In addition, you'll learn how to design a deployment and monitoring architecture using Azure Resource Manager templates to provision Azure resources, Application Insights for deep application monitoring, and Azure DevOps as a source code repository and build/deploy pipeline.
 
-### Hands-on Lab
+### Hands-on lab
+In this hands-on lab, you will learn how to implement a solution with a combination of ARM templates and Azure DevOps to enable continuous delivery with several Azure PaaS services.
 
-In this hands-on lab, you will learn how to implement a solution with a combination of Azure Resource Manager templates and Azure DevOps to enable continuous delivery with several Azure PaaS services.
-
-At the end of this workshop, you will be better able to implement solutions for continuous delivery with Azure DevOps in Azure, as well create an Azure Resource Manager (ARM) template to provision Azure resources, create an Azure DevOps project with a Git repository, and configure continuous delivery with Azure DevOps.
+At the end of this workshop, you will be better able to implement solutions for continuous delivery with Github in Azure, as well create an ARM (ARM) template to provision Azure resources, create an Azure DevOps project with a Github repository, and configure continuous delivery with Github.
 
 ## Azure services and related products
 - Azure App Service 
@@ -63,3 +63,5 @@ We welcome feedback and comments from Microsoft SMEs & learning partners who del
 If you are planning to present a workshop, *review and test the materials early*! We recommend at least two weeks prior.
 
 ### Please allow 5 - 10 business days for review and resolution of issues.
+
+    

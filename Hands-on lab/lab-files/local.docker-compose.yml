@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  mongo:
+    image: mongo
+    restart: always
+
+  api:
+    build: ./content-api
+    image: local-fabrikam-api
+    depends_on:
+      - mongo
+    environment:
+      MONGODB_CONNECTION: mongodb://mongo:27017/contentdb    
+
+  web:
+    build: ./content-web
+    image: local-fabrikam-web

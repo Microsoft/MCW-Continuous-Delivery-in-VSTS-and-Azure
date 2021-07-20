@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  init:
+    build: ./content-init
+    image: ghcr.io/<yourgithubaccount>/fabrikam-init:main
+    depends_on:
+      - mongo
+    environment:
+      MONGODB_CONNECTION: mongodb://mongo:27017/contentdb
